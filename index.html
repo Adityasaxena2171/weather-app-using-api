@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(saxena.jpg)
+            
+        }
+        .container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 500px;
+            background-image: url(photo-1599435214324-d71096238079.avif);
+            background-size: cover;
+            font-size: xx-large;
+            font-weight: 900;
+           
+        }
+        h1 {
+            color: #09ff00;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #007bff;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 900;
+        }
+        button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+           
+        }
+      
+        img {
+            width: 150px;
+            height: 150px;
+            margin: 20px 0;
+        }
+        #temprature {
+            font-size: 36px;
+            color: #333;
+        }
+        h3 {
+            font-size: 20px;
+            color: #333;
+        }
+        .another {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .another div {
+            text-align: center;
+        }
+
+        .another h2, .another h1 {
+            font-size: 18px;
+            color: #333;
+        }
+        #temps{
+            font-size: 50px;
+            font-weight: 900;
+        }
+     
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1>WEATHER APP USING API</h1>
+    <div class="conaitner">
+       <input type="text" name="" id="city" placeholder="enter city ">
+       <button>check weather</button>  
+      </div>
+      <img src="clear.png" alt="">
+      <h1 id="temps">'c</h1>
+      <!-- <h3 id="city">city name</h3> -->
+      <div class="another">
+        <div class="hum">
+           
+            <h2 id="humi">hummidity = </h2>
+           <h2 id="wind">wind speed = </h2>
+            <h1 id="regn">region = </h1>
+        </div>
+        <div class="clas2">
+            <h1 id="time">time = </h1>
+            <h2 id="perss">pressure = </h2>
+            <h1 id="country">country = </h1>
+        </div>
+      </div>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+   <script src="index.js"></script>
+</body>
+</html>

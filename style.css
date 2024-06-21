@@ -1,0 +1,30 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://source.unsplash.com/1600x900/?diseases);
+        background-size: cover;
+        
+       
+        background: #f0f0f0;
+        
+      }
+
+.another{
+    display: flex;
+
+  justify-content: space-between;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    border: 5px solid magenta;
+    padding-left: 20px;
+    padding-right: 30px;
+    background-image: url(https://source.unsplash.com/1600x900/?diseases);
+}
